@@ -2,5 +2,50 @@ button {
     background: green;
 }
 body {
-background-color: black;
+background-color: white;
+}
+.Tablet {
+    display: none;
+}
+.Desktop{
+    display: none;
+}
+.barra{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    text-align: center;
+}
+.Mobile{
+    font-size: 60px;
+    color: aliceblue;
+}
+@media (min-width: 120px) {
+    .Barra{
+        width: 80px;
+        background-color: tomato;
+    }
+    .Mobile{
+        display: none;
+    }
+    .Tablet {
+        display: inline;
+        font-size: 60px;
+        color: blueviolet;
+    }
+}
+@media (min-width: 1228px){
+    .Barra{
+        height: 100px;
+        background-color: cornflowerblue;
+    }
+    .Tablet{
+        display: none;
+    }
+    .Desktop {
+        display: inline;
+        font-size: 90px;
+        color: green;
+
+    }
 }
