@@ -1,0 +1,97 @@
+/*button {
+    background: green;
+}*/
+body {
+background-color: white;
+}
+.btn{
+    background-color: darkorange;
+    width: 100%;
+    padding-top:5px ;
+    padding-bottom: 5px;
+}
+#a1{
+    display: none;
+}
+#a2{
+    display: none;
+}
+#a3{
+    display: none;
+}
+#a4{
+    display: none;
+}
+#a5{
+    display: none;
+}
+.aba1{
+    background-color: blueviolet;
+    width: 100%;
+    height: 400px;
+}
+.aba2{
+    background-color: rgb(16, 67, 87);
+    width: 100%;
+    height: 400px;
+}
+.aba3{
+    background-color: rgb(187, 112, 13);
+    width: 100%;
+    height: 400px;
+}
+.aba4{
+    background-color: rgb(106, 223, 131);
+    width: 100%;
+    height: 400px;
+}
+.aba5{
+    background-color: rgb(148, 11, 75);
+    width: 100%;
+    height: 400px;
+}
+.Tablet {
+    display: none;
+}
+.Desktop{
+    display: none;
+}
+.barra{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    text-align: center;
+}
+.Mobile{
+    font-size: 60px;
+    color: aliceblue;
+}
+@media (min-width: 120px) {
+    .Barra{
+        width: 80px;
+        background-color: tomato;
+    }
+    .Mobile{
+        display: none;
+    }
+    .Tablet {
+        display: inline;
+        font-size: 60px;
+        color: blueviolet;
+    }
+}
+@media (min-width: 1228px){
+    .Barra{
+        height: 100px;
+        background-color: cornflowerblue;
+    }
+    .Tablet{
+        display: none;
+    }
+    .Desktop {
+        display: inline;
+        font-size: 90px;
+        color: green;
+
+    }
+}
