@@ -1,8 +1,59 @@
 button {
-    background: green;
+    background: gray    ;
 }
 body {
 background-color: white;
+}
+.btn{
+    background-color: cadetblue;
+    width: 100%;
+    padding-top:5px ;
+    padding-bottom: 5px;
+}
+#h{
+    font-size: 60px;
+    color: black;
+    font-style: italic;
+}
+#a1{
+    display: none;
+}
+#a2{
+    display: none;
+}
+#a3{
+    display: none;
+}
+#a4{
+    display: none;
+}
+#a5{
+    display: none;
+}
+.aba1{
+    background-color: blueviolet;
+    width: 100%;
+    height: 400px;
+}
+.aba2{
+    background-color: rgb(16, 67, 87);
+    width: 100%;
+    height: 400px;
+}
+.aba3{
+    background-color: rgb(187, 112, 13);
+    width: 100%;
+    height: 400px;
+}
+.aba4{
+    background-color: rgb(106, 223, 131);
+    width: 100%;
+    height: 400px;
+}
+.aba5{
+    background-color: rgb(148, 11, 75);
+    width: 100%;
+    height: 400px;
 }
 .Tablet {
     display: none;
@@ -13,7 +64,7 @@ background-color: white;
 .barra{
     width: 100%;
     height: 80px;
-    background-color: blue;
+    background-color: purple;
     text-align: center;
 }
 .Mobile{
@@ -31,7 +82,7 @@ background-color: white;
     .Tablet {
         display: inline;
         font-size: 60px;
-        color: blueviolet;
+        color: white;
     }
 }
 @media (min-width: 1228px){
