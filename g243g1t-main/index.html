@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./estilo/base.css">
+
+    
+</head>
+<body>
+    <header class="barra">
+        <span class="Mobile">Mobile</span>
+        <span class="Tablet">Tablet</span>
+        <span class="Dekstop">Dekstop</span>
+    </header>
+    <section class="conteudo">
+      <div class="botoes">
+        <button id="aba1" class="btn" onclick="abrir(1)">aba 1</button>
+        <button id="aba2" class="btn" onclick="abrir(2)">aba 2</button>
+        <button id="aba3" class="btn" onclick="abrir(3)">aba 3</button>
+        <button id="aba4" class="btn" onclick="abrir(4)">aba 4</button>
+        <button id="aba5" class="btn" onclick="abrir(5)">aba 5</button>
+      </div>
+      <div class="abas">
+        <div id="a1" class="aba1">
+          <div class="divisoes">
+          <div class="abageral aba1" id="ab1">hora Atual<span id="h"></span></div>
+          </div></div>
+        <div id="a2" class="aba2">
+          contar de: <input type="number" id="inicio">
+          ate: <input type="number" id="fim"><br>
+          <button onclick="iniciarContagem()">contar</button><br>
+          <span id="valor"></span>
+        </div>
+        <div id="a3" class="aba3">
+          <h3>Alarme</h3>
+          <input type="number" id="hd" max="23" min="0" class="desp">:
+          <input type="number" id="md" max="59" min="0" class="desp">:
+          <input type="number" id="sd" max="59" min="0" class="desp">:
+          <br><br>
+          <button onclick="ligar_alarme()">Ligar Alarme</button>
+
+        </div>
+        <div id="a4" class="aba4">estou na aba 4</div>
+        <div id="a5" class="aba5">estou na aba 5</div>
+      </div>
+    </section>
+
+</body>
+</html>
