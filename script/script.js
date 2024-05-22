@@ -21,7 +21,7 @@ function abrir(num){
         document.getElementById("aba3").disabled = true;
         document.getElementById("a3").style.display = "block";
         pegar_hora();
-        document.getElementById("hd").value = hd; 
+        document.getElementById("hd").value = hd;
         document.getElementById("md").value = md;
         document.getElementById("sd").value = sd;
     }
@@ -46,9 +46,11 @@ function hora_atual(){
     let s = d.getSeconds();
     if(s < 10){
         s = "0"+ s;
-    }{
+    }
+    if(m < 10){
         m = "0"+ m;
-    }{
+    }
+    if(h < 10){
         h = "0"+ h;
     }
     document.getElementById("h").innerHTML = h+":"+m+":"+s;
@@ -58,7 +60,6 @@ setInterval(() =>{
 }, 1000);
 
 function contador(){
-   
     if(inicio == fim){
         contar.clearInterval();
     }else{
@@ -77,20 +78,22 @@ function iniciarContagem(){
         contador();
     },1000);
 }
+
 let hd = 0;
 let md = 0;
+let sd = 0;
 let alarme = null;
 function pegar_hora(){
     let d = new Date();
-    hd = getHours();
-    md = getMinutes();
-    sd = getSeconds();
+    hd = d.getHours();
+    md = d.getMinutes();
+    sd = d.getSeconds();
 }
 function ativar_alarme(){
     let d = new Date();
-    if (hd==d.getHours() && md==d.getMinutes() && sd==d.getSeconds()){
+    if(hd == d.getHours() && md == d.getMinutes() && sd == d.getSeconds()){
         clearInterval(alarme);
-        alert("Alarme...voltando para Aba3");
+        alert("Alarme... Voltando para aba 3");
         abrir(3);
     }
 }
@@ -98,5 +101,5 @@ function ligar_alarme(){
     hd = document.getElementById("hd").value;
     md = document.getElementById("md").value;
     sd = document.getElementById("sd").value;
-    alarme = setInterval (ativar_alarme,1000);
+    alarme = setInterval(ativar_alarme, 1000);
 }
