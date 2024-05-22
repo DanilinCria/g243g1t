@@ -1,20 +1,8 @@
 body {
-    background-color:   rgb(255, 255, 255);
-}
-#h{
-    font-style: italic;
-    font-size: 90px;
-    color: rgb(0, 0, 0);
-}
-.desp{
-    border: none;
-    width: 50px;
-    color: rgb(255, 255, 255);
-    background-color: black;
-    font-size: 32px;
+    background-color: rgb(151, 202, 202);
 }
 .btn {
-    background: rgb(221, 216, 217);
+    background: rgb(86, 189, 86);
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -37,27 +25,27 @@ body {
 
 
 .aba1{
-    background-color: rgb(18, 121, 134);
+    background-color: azure;
     width: 100%;
     height: 400px;
 }
 .aba2{
-    background-color: rgb(183, 78, 197);
+    background-color: rgb(181, 230, 230);
     width: 100%;
     height: 400px;
 }
 .aba3{
-    background-color:  rgb(122, 14, 108);
+    background-color:  rgb(130, 185, 185);
     width: 100%;
     height: 400px;
 }
 .aba4{
-    background-color: rgb(20, 114, 28);
+    background-color: rgb(125, 160, 160);
     width: 100%;
     height: 400px;
 }
 .aba5{
-    background-color: rgb(228, 159, 9);
+    background-color: rgb(65, 87, 87);
     width: 100%;
     height: 400px;
 }
@@ -111,7 +99,7 @@ body {
 @media (min-width: 1228px) {
     .barra {
         height: 100px;
-        background-color: rgb(183, 78, 197);
+        background-color: rgb(92, 218, 165);
     }
     .tablet {
         display: none;
@@ -124,4 +112,10 @@ body {
     .conteudo{
         text-align: left;
     }
-}       
+}
+
+
+
+
+
+        

@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script/script.js"></script>
-    <link rel="stylesheet" href="./estilo/base.css">
-    <script src="./script/estruturas.js"></script>
-
+    <link rel="stylesheet" href="./style/base.css">
 </head>
 <body>
     <header class="barra">
@@ -37,33 +35,31 @@
                         <span id="h"></span>
                     </div>
                 </div>
-                <div id="a2" class="aba2">
+<div id="a2" class="aba2">
                     Contar de: <input type="number" id="inicio">
                     até: <input type="number" id="fim"><br>
                     <button onclick="iniciarContagem()">Contar</button><br>
                     <span id="valor"></span>
                 </div>
-                <div id="a3" class="aba3">
-                    <h3>Alarme</h3>
-                    <input type="number" id="hd" max="23" min="0" class="desp">
-                    <input type="number" id="md" max="59" min="0" class="desp">
-                    <input type="number" id="sd" max="59" min="0" class="desp">
-                    <br><br>
-                    <button onclick="ligar_alarme()">Ligar Alarme</button>
-                </div>
+                <div id="a3" class="aba3"></div>
+                <h3>Alarme</h3>
+                <input type="number" id="hd" max="23" min="0" class="desp" >
+                <input type="number" id="md" max="59" min="0" class="desp" >
+                <input type="number" id="sd" max="59" min="0" class="desp" >
+                <br><br>
+                <button onclick="ligar_alarme()">Ligar Alarme</button>
                 <div id="a4" class="aba4">
-                  <div class="minha_fila"><span id="fila">Não tem fila</span></div>
-                  <div class="operacoes_fila">
-                    <button onclick="criarFila()">Criar fila</button>
-                    <button onclick="removerFila()">Remover Fila</button>
+                <div class="minha_fila"><span id="fila">não tem fila</span></div>
+                <div class="operacoes_fila">
+                    <button onclick="criarFila()">Criar fila</button><br>
+                    <button onclick="removerFila()">Remover fila</button><br>
 
                     <div class="adicionar_fila">
-                     Nome:<input type="text" id="nome"> <button onclick="inserirElementoFila()">Inserir na fila</button>
+                        Nome: <input type="text" id="nome"> <button onclick="inserirElementoFila()">Inserir na fila</button>
                     </div>
 
-                  </div>
-
                 </div>
+            </div>
                 <div id="a5" class="aba5"></div>
             </div>
 
